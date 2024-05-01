@@ -24,6 +24,10 @@ apply plugin: 'com.android.library'
 android {
     compileSdkVersion 34
     namespace 'xyz.justsoft.video_thumbnail'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
     defaultConfig {
         minSdkVersion 16
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
